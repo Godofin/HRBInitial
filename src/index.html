@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="main.js" type='module' defer></script>
+    <title>Client Page</title>
+</head>
+<body class="bg-gray-100">
+    
+<!-- menu sidenav -->
+<nav class="bg-gray-100 border-gray-500 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a href="https://flowbite.com/" class="flex items-center">
+          <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
+          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+          <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Client</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Product</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+  
+<!-- Breadcrumbs -->
+<nav class="flex pl-10 pt-5" aria-label="Breadcrumb">
+    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+      <li class="inline-flex items-center">
+        <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 ">
+          <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+          Home
+        </a>
+      </li>
+      <li>
+        <div class="flex items-center">
+          <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+          <a href="#" class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2">Client</a>
+        </div>
+      </li>
+    </ol>
+</nav>
+
+<h1 class="flex pl-10 pt-5 text-5xl">Clients</h1>
+  
+<!-- forms -->
+<!-- form-initial -->
+<form>
+    <h2 class="flex pl-10 pt-5 text-2xl text-gray-400">Register Data</h2>
+    <div class="pl-5 pt-5 pr-5 grid gap-6 mb-6 md:grid-cols-3">
+        <div>
+            <label class="block mb-2 text-sm font-medium text-black dark:text-gray-300">First name</label>
+            <input type="text" id="first_name" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="First Name" required>
+        </div>
+        <div>
+            <label class="block mb-2 text-sm font-medium text-black dark:text-gray-300">Last name</label>
+            <input type="text" id="first_name" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Last Name" required>
+        </div>
+        <div>
+            <label class="block mb-2 text-sm font-medium text-black dark:text-gray-300">Fantasy name</label>
+            <input type="text" id="first_name" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Fantasy Name" required>
+        </div>
+        <div>
+            <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Person type</label>
+            <select id="countries" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+            <option selected>Choose a type</option>
+            <option value="CNPJ">Legal Entity</option>
+            <option value="CPF">Individual Person</option>
+            </select>
+        </div>
+        <div>
+            <label class="block mb-2 text-sm font-medium text-black dark:text-gray-300">CNPJ</label>
+            <input type="text" id="first_name" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="XX. XXX. XXX/0001-XX" required>
+        </div>
+        <div>
+            <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Tax Regime Code</label>
+            <select id="countries" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+            <option selected>Choose a Tax</option>
+            <option value="undefined">Undefined</option>
+            <option value="Code">Code</option>
+            </select>
+        </div>
+        <div class="grid gap-6 mb-6 md:grid-cols-2">
+            <div>
+                <label class="block mb-2 text-sm font-medium text-black dark:text-gray-300">Cliente Since</label>
+                <input type="date" id="first_name" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Client Since" required>
+            </div>
+            <div>
+                <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">TaxPayer</label>
+                <select id="countries" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+                <option selected>Choose a type</option>
+                <option value="undefined">1-ICMS</option>
+                <option value="Code">2-Anyone</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <label class="block mb-2 text-sm font-medium text-black dark:text-gray-300">State Registration</label>
+            <input type="text" id="first_name" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="State Registration" required>
+        </div>
+        <div class="grid gap-6 mb-6 md:grid-cols-2">
+            <div class="pl-10 pt-10">
+                <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-white rounded border-gray-300">
+                <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">SR Enable</label>
+            </div>
+            <div>
+                <label class="block mb-2 text-sm font-medium text-black dark:text-gray-300">Municipal Registration</label>
+                <input type="text" id="first_name" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Municipal Registration" required>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- Address Form -->
+<form>
+    <h2 class="flex pl-10 pt-5 text-2xl text-gray-400">Addres Data</h2>
+    <div class="pl-5 pt-5 pr-5 grid gap-6 mb-6 md:grid-cols-2">
+        <div>
+            <label class="block mb-2 text-sm font-medium text-black dark:text-gray-300">Street name</label>
+            <input type="text" id="address" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 " placeholder="Street Name" required>
+        </div>
+        <div>
+            <label class="block mb-2 text-sm font-medium text-black dark:text-gray-300">District name</label>
+            <input type="text" id="district" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 " placeholder="District Name" required>
+        </div>
+        <div>
+            <label class="block mb-2 text-sm font-medium text-black dark:text-gray-300">City name</label>
+            <input type="text" id="city" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 " placeholder="City Name" required>
+        </div>
+        <div class="grid gap-6 mb-6 md:grid-cols-3">
+            <div >
+                <label class="block mb-2 text-sm font-medium text-black dark:text-gray-300">House Number</label>
+                <input type="text" id="number" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 " placeholder="1234" required>
+            </div>
+            <div >
+                <label class="block mb-2 text-sm font-medium text-black dark:text-gray-300">CEP</label>
+                <input type="text" id="cep" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 " placeholder="0000-000" required>
+            </div>
+            <div >
+                <label class="block mb-2 text-sm font-medium text-black dark:text-gray-300">UF</label>
+                <input type="text" id="state" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 " placeholder="0000-000" required>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
